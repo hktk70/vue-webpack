@@ -13,10 +13,6 @@ Vue.component(Button.name, Button)
 
 var vm = new Vue({
     el: '#app',
-  
-
-
-
     render: c => c(app),
     router
   })
