@@ -1,12 +1,3 @@
 <template>
-  <div>
-    <h3>Seaxrch</h3>
-  </div>
+  <h1>assssssss</h1>
 </template>
-
-<script>
-</script>
-
-<style lang="scss" scoped>
-
-</style>

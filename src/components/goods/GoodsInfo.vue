@@ -56,8 +56,8 @@
     </div>
 </template>
 <script>
-import swiper from "../subcomponents/swiper.vue"
-import numbox from "../subcomponents/goodsinfo_numbox.vue";
+import swiper from "./../subcomponents/swiper.vue"
+import numbox from "./../subcomponents/goodsinfo_numbox.vue";
 export default {
     data () {
         return {
@@ -93,6 +93,13 @@ export default {
         },
         addToShopCar(){
             this.ballFlag=!this.ballFlag;
+            var goofinfo={
+              id: this.id,
+              count: this.selectedCount,
+              price: this.goodsinfo.sell_price,
+              selected: true
+            };
+            this.$store.commit("addToCar",goofinfo);
         },
         goDesc(id){
           
